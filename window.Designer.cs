@@ -1,6 +1,6 @@
 ﻿namespace Draw
 {
-    partial class window
+    partial class Window
     {
         /// <summary>
         /// Wymagana zmienna projektanta.
@@ -51,18 +51,21 @@
             // 
             this.groupSend.Controls.Add(this.connect);
             this.groupSend.Controls.Add(this.combo);
-            this.groupSend.Location = new System.Drawing.Point(438, 165);
+            this.groupSend.Location = new System.Drawing.Point(584, 203);
+            this.groupSend.Margin = new System.Windows.Forms.Padding(4);
             this.groupSend.Name = "groupSend";
-            this.groupSend.Size = new System.Drawing.Size(200, 87);
+            this.groupSend.Padding = new System.Windows.Forms.Padding(4);
+            this.groupSend.Size = new System.Drawing.Size(267, 107);
             this.groupSend.TabIndex = 5;
             this.groupSend.TabStop = false;
             this.groupSend.Text = "Send to Arduino";
             // 
             // connect
             // 
-            this.connect.Location = new System.Drawing.Point(6, 50);
+            this.connect.Location = new System.Drawing.Point(8, 62);
+            this.connect.Margin = new System.Windows.Forms.Padding(4);
             this.connect.Name = "connect";
-            this.connect.Size = new System.Drawing.Size(188, 28);
+            this.connect.Size = new System.Drawing.Size(251, 34);
             this.connect.TabIndex = 2;
             this.connect.Text = "Connect";
             this.connect.UseVisualStyleBackColor = true;
@@ -71,9 +74,10 @@
             // combo
             // 
             this.combo.FormattingEnabled = true;
-            this.combo.Location = new System.Drawing.Point(6, 23);
+            this.combo.Location = new System.Drawing.Point(8, 28);
+            this.combo.Margin = new System.Windows.Forms.Padding(4);
             this.combo.Name = "combo";
-            this.combo.Size = new System.Drawing.Size(188, 21);
+            this.combo.Size = new System.Drawing.Size(249, 24);
             this.combo.TabIndex = 0;
             // 
             // groupDraw
@@ -83,9 +87,11 @@
             this.groupDraw.Controls.Add(this.clear);
             this.groupDraw.Controls.Add(this.groupeColor);
             this.groupDraw.Controls.Add(this.setSize);
-            this.groupDraw.Location = new System.Drawing.Point(438, 12);
+            this.groupDraw.Location = new System.Drawing.Point(584, 15);
+            this.groupDraw.Margin = new System.Windows.Forms.Padding(4);
             this.groupDraw.Name = "groupDraw";
-            this.groupDraw.Size = new System.Drawing.Size(200, 147);
+            this.groupDraw.Padding = new System.Windows.Forms.Padding(4);
+            this.groupDraw.Size = new System.Drawing.Size(267, 181);
             this.groupDraw.TabIndex = 4;
             this.groupDraw.TabStop = false;
             this.groupDraw.Text = "Draw settings";
@@ -93,26 +99,29 @@
             // hundred
             // 
             this.hundred.AutoSize = true;
-            this.hundred.Location = new System.Drawing.Point(169, 51);
+            this.hundred.Location = new System.Drawing.Point(225, 63);
+            this.hundred.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hundred.Name = "hundred";
-            this.hundred.Size = new System.Drawing.Size(25, 13);
+            this.hundred.Size = new System.Drawing.Size(32, 17);
             this.hundred.TabIndex = 8;
             this.hundred.Text = "100";
             // 
             // five
             // 
             this.five.AutoSize = true;
-            this.five.Location = new System.Drawing.Point(13, 51);
+            this.five.Location = new System.Drawing.Point(17, 63);
+            this.five.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.five.Name = "five";
-            this.five.Size = new System.Drawing.Size(13, 13);
+            this.five.Size = new System.Drawing.Size(16, 17);
             this.five.TabIndex = 7;
             this.five.Text = "5";
             // 
             // clear
             // 
-            this.clear.Location = new System.Drawing.Point(6, 113);
+            this.clear.Location = new System.Drawing.Point(8, 139);
+            this.clear.Margin = new System.Windows.Forms.Padding(4);
             this.clear.Name = "clear";
-            this.clear.Size = new System.Drawing.Size(188, 28);
+            this.clear.Size = new System.Drawing.Size(251, 34);
             this.clear.TabIndex = 6;
             this.clear.Text = "Clear";
             this.clear.UseVisualStyleBackColor = true;
@@ -122,9 +131,11 @@
             // 
             this.groupeColor.Controls.Add(this.draw);
             this.groupeColor.Controls.Add(this.erase);
-            this.groupeColor.Location = new System.Drawing.Point(6, 70);
+            this.groupeColor.Location = new System.Drawing.Point(8, 86);
+            this.groupeColor.Margin = new System.Windows.Forms.Padding(4);
             this.groupeColor.Name = "groupeColor";
-            this.groupeColor.Size = new System.Drawing.Size(188, 37);
+            this.groupeColor.Padding = new System.Windows.Forms.Padding(4);
+            this.groupeColor.Size = new System.Drawing.Size(251, 46);
             this.groupeColor.TabIndex = 4;
             this.groupeColor.TabStop = false;
             this.groupeColor.Text = "Color";
@@ -133,9 +144,10 @@
             // 
             this.draw.AutoSize = true;
             this.draw.Checked = true;
-            this.draw.Location = new System.Drawing.Point(6, 12);
+            this.draw.Location = new System.Drawing.Point(8, 15);
+            this.draw.Margin = new System.Windows.Forms.Padding(4);
             this.draw.Name = "draw";
-            this.draw.Size = new System.Drawing.Size(52, 17);
+            this.draw.Size = new System.Drawing.Size(63, 21);
             this.draw.TabIndex = 2;
             this.draw.TabStop = true;
             this.draw.Text = "Black";
@@ -145,9 +157,10 @@
             // erase
             // 
             this.erase.AutoSize = true;
-            this.erase.Location = new System.Drawing.Point(64, 12);
+            this.erase.Location = new System.Drawing.Point(85, 15);
+            this.erase.Margin = new System.Windows.Forms.Padding(4);
             this.erase.Name = "erase";
-            this.erase.Size = new System.Drawing.Size(53, 17);
+            this.erase.Size = new System.Drawing.Size(65, 21);
             this.erase.TabIndex = 3;
             this.erase.Text = "White";
             this.erase.UseVisualStyleBackColor = true;
@@ -155,11 +168,12 @@
             // 
             // setSize
             // 
-            this.setSize.Location = new System.Drawing.Point(6, 19);
+            this.setSize.Location = new System.Drawing.Point(8, 23);
+            this.setSize.Margin = new System.Windows.Forms.Padding(4);
             this.setSize.Maximum = 100;
             this.setSize.Minimum = 5;
             this.setSize.Name = "setSize";
-            this.setSize.Size = new System.Drawing.Size(188, 45);
+            this.setSize.Size = new System.Drawing.Size(251, 56);
             this.setSize.SmallChange = 5;
             this.setSize.TabIndex = 0;
             this.setSize.TickFrequency = 5;
@@ -170,9 +184,10 @@
             // 
             this.canvas.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.canvas.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.canvas.Location = new System.Drawing.Point(12, 12);
+            this.canvas.Location = new System.Drawing.Point(16, 15);
+            this.canvas.Margin = new System.Windows.Forms.Padding(4);
             this.canvas.Name = "canvas";
-            this.canvas.Size = new System.Drawing.Size(420, 240);
+            this.canvas.Size = new System.Drawing.Size(560, 295);
             this.canvas.TabIndex = 3;
             this.canvas.TabStop = false;
             this.canvas.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Canvas_MouseClick);
@@ -180,19 +195,22 @@
             this.canvas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Canvas_MouseMove);
             this.canvas.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Canvas_MouseUp);
             // 
-            // window
+            // Window
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(674, 279);
+            this.ClientSize = new System.Drawing.Size(899, 343);
             this.Controls.Add(this.groupSend);
             this.Controls.Add(this.groupDraw);
             this.Controls.Add(this.canvas);
-            this.Name = "window";
-            this.Padding = new System.Windows.Forms.Padding(12);
-            this.Text = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.Name = "Window";
+            this.Padding = new System.Windows.Forms.Padding(16, 15, 16, 15);
+            this.ShowIcon = false;
+            this.Text = "Drawer";
             this.groupSend.ResumeLayout(false);
             this.groupDraw.ResumeLayout(false);
             this.groupDraw.PerformLayout();

@@ -12,7 +12,7 @@ using System.Collections;
 
 namespace Draw
 {
-    public partial class window : Form
+    public partial class Window : Form
     {
         bool isConnected = false;
         String[] ports;
@@ -27,8 +27,7 @@ namespace Draw
 
         Queue queue = new Queue();
 
-
-        public window()
+        public Window()
         {
             InitializeComponent();
             Disable();
