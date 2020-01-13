@@ -6,14 +6,17 @@ Adafruit_PCD8544 display = Adafruit_PCD8544(7, 6, 5, 4, 3);
 int size = 2;
 int collor = 1;
 
-void drawCircles(byte x1, byte y1, byte x2, byte y2)
+
+
+//Recurency function to draw line betwean two points
+void drawLine(byte x1, byte y1, byte x2, byte y2)
 {
   if(abs(x1-x2) > size/2 || abs(y1-y2) > size/2)
   {
     byte x3 = (x1+x2)/2, y3 = (y1+y2)/2;
     display.fillCircle(x3, y3, size / 2, collor);
-    drawCircles(x1, y1, x3, y3);
-    drawCircles(x3, y3, x2, y2);
+    drawLine(x1, y1, x3, y3);
+    drawLine(x3, y3, x2, y2);
   }
 }
 
@@ -26,6 +29,7 @@ void setup()
   display.setContrast(40);
   display.clearDisplay();
   display.display();
+  
   Serial.begin(9600);
 }
 
@@ -65,8 +69,6 @@ void loop()
               x2 = x1;
               y2 = y1;
             }
-
-
 
             if(size > 1)
             {
