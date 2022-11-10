@@ -1,5 +1,5 @@
 # Drawer
-Windows app and Arduino code, communicating by serial port
+This app lets yu draw on your computer screen, and shows it on connected arduino's screen
 
 ## Overview
 Drawer is a program that allows drawing monochromatic vector graphics objects on a Windows app, send it in real time through a serial port to Arduino board and draw on Nokia 5510 screen.
